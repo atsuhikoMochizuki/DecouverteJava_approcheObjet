@@ -1,5 +1,6 @@
 import fr.diginamic.tp1.Tp1;
 import fr.diginamic.tp4.Tp4;
+import fr.diginamic.tp5.Tp5;
 import mochizukiTools.Params;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -9,5 +10,6 @@ public class Main {
         Params.welcomePrompt();
         Tp1.run();
         Tp4.run();
+        Tp5.run();
     }
 }
