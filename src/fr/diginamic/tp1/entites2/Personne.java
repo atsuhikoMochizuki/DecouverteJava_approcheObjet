@@ -3,9 +3,9 @@ package fr.diginamic.tp1.entites2;
 import fr.diginamic.tp1.entites.*;
 
 public class Personne {
-    public String name;
-    public String prenom;
-    public AdressePostale addresse;
+    private String name;
+    private String prenom;
+    private AdressePostale addresse;
 
 
     public Personne(String name, String prenom, AdressePostale addresse) {
@@ -26,6 +26,29 @@ public class Personne {
     public void setLastName(String i_lastName) {
         this.prenom = i_lastName;
     }
+
+
+    //Modification de l'adresse
+    public void setAdress(AdressePostale adress)
+    {
+
+    }
+
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public String getPrenom()
+    {
+        return this.prenom;
+    }
+
+    public AdressePostale getAdresse()
+    {
+        return this.addresse;
+    }
+
 
 
     @Override
