@@ -29,4 +29,5 @@ public class TestOperation {
         String str2 = "Montant global des opérations: "+montantGlobal+" Euros";
         Utils.msgResult(str2);
     }
+
 }

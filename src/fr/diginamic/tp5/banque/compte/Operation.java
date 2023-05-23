@@ -8,6 +8,23 @@ public abstract class Operation {
         this.operationDate = operationDate;
         this.montant = montant;
     }
+
+    public String getOperationDate() {
+        return operationDate;
+    }
+
+    public void setOperationDate(String operationDate) {
+        this.operationDate = operationDate;
+    }
+
+    public double getMontant() {
+        return montant;
+    }
+
+    public void setMontant(double montant) {
+        this.montant = montant;
+    }
+
     public abstract String toString();
     public abstract String getType();
 }

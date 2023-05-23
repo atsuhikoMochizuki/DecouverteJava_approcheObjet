@@ -5,6 +5,7 @@ public class Debit extends Operation{
        super(operationDate, montant);
 
     }
+    @Override
     public String toString()
     {
         String str = "Date opération: "+operationDate+"=="+getType()+"=> Montant: -"+montant+" Euros";
