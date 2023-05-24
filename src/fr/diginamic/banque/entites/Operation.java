@@ -1,8 +1,8 @@
-package fr.diginamic.tp5.banque.compte;
+package fr.diginamic.banque.entites;
 
 public abstract class Operation {
-    String operationDate;
-    double montant;
+    private String operationDate;
+    private double montant;
 
     public Operation(String operationDate, double montant) {
         this.operationDate = operationDate;
@@ -24,7 +24,11 @@ public abstract class Operation {
     public void setMontant(double montant) {
         this.montant = montant;
     }
-
+    @Override
     public abstract String toString();
-    public abstract String getType();
+
+    public String getType()
+    {
+        return "CREDIT";
+    }
 }

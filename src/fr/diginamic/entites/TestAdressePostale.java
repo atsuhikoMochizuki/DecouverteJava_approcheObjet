@@ -1,4 +1,4 @@
-package fr.diginamic.tp1.entites;
+package fr.diginamic.entites;
 
 public class TestAdressePostale {
     public static void main(String[] args) {

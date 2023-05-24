@@ -1,9 +1,9 @@
-package fr.diginamic.tp5.banque.compte;
+package fr.diginamic.banque.entites;
 
 import mochizukiTools.Utils;
 
 public class TestOperation {
-    public static void main(String[] args) {
+    public static void run(){
         Operation[] operations = new Operation[8];
         operations[0] = new Credit("22/05/2023",450);
         operations[1] = new Credit("22/05/2023",200);
@@ -14,20 +14,23 @@ public class TestOperation {
         operations[6] = new Debit("22/05/2023",8);
         operations[7] = new Debit("22/05/2023",900);
 
+        Utils.msgInfo("Liste des opérations :");
         for (Operation op: operations)
-            System.out.println(op.toString());
+            Utils.msgResult(op.toString());
 
-        Utils.msgInfo("Montant de global des opérations :");
+        Utils.msgInfo("Calcul du montant de global des opérations...");
         double montantGlobal = 0;
         for (Operation op: operations)
         {
             if(op.getType().equals("CREDIT"))
-                montantGlobal +=op.montant;
+                montantGlobal +=op.getMontant();
             else
-                montantGlobal -=op.montant;
+                montantGlobal -=op.getMontant();
         }
-        String str2 = "Montant global des opérations: "+montantGlobal+" Euros";
+        String str2 = ""+montantGlobal+" Euros";
         Utils.msgResult(str2);
+
     }
+
 
 }

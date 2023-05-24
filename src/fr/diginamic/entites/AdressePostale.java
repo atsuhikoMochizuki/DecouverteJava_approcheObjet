@@ -1,4 +1,4 @@
-package fr.diginamic.tp1.entites;
+package fr.diginamic.entites;
 
 public class AdressePostale {
     int numeroDeRue;
@@ -10,6 +10,22 @@ public class AdressePostale {
         this.numeroDeRue = numeroDeRue;
         this.libelleDeRue = libelleDeRue;
         this.codePostal = codePostal;
+        this.ville = ville;
+    }
+
+    public void setNumeroDeRue(int numeroDeRue) {
+        this.numeroDeRue = numeroDeRue;
+    }
+
+    public void setLibelleDeRue(String libelleDeRue) {
+        this.libelleDeRue = libelleDeRue;
+    }
+
+    public void setCodePostal(int codePostal) {
+        this.codePostal = codePostal;
+    }
+
+    public void setVille(String ville) {
         this.ville = ville;
     }
 

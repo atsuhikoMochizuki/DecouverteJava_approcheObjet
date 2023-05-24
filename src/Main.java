@@ -1,6 +1,8 @@
-import fr.diginamic.tp1.Tp1;
-import fr.diginamic.tp4.Tp4;
-import fr.diginamic.tp5.Tp5;
+import fr.diginamic.banque.TestBanque;
+import fr.diginamic.banque.entites.TestOperation;
+import fr.diginamic.entites.TestPersonne;
+
+import fr.diginamic.utils.TestMethodeStatic;
 import mochizukiTools.Params;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -8,8 +10,10 @@ import mochizukiTools.Params;
 public class Main {
     public static void main(String[] args) {
         Params.welcomePrompt();
-        Tp1.run();
-        Tp4.run();
-        Tp5.run();
+        TestPersonne.run();
+        TestMethodeStatic.run();
+        TestBanque.run();
+        TestOperation.run();
+
     }
 }
