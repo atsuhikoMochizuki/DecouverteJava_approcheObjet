@@ -1,6 +1,6 @@
 package fr.diginamic.listes;
 
-public class Ville {
+public class Ville{
     private String nom;
     private int pop;
 
@@ -37,7 +37,4 @@ public class Ville {
     public void setPop(int pop) {
         this.pop = pop;
     }
-
-
-
 }
