@@ -2,6 +2,8 @@ import fr.diginamic.banque.TestBanque;
 import fr.diginamic.banque.entites.TestOperation;
 import fr.diginamic.entites.TestPersonne;
 
+import fr.diginamic.listes.TestVille;
+import fr.diginamic.listes.TestVille.*;
 import fr.diginamic.utils.TestMethodeStatic;
 import mochizukiTools.Params;
 
@@ -14,6 +16,7 @@ public class Main {
         TestMethodeStatic.run();
         TestBanque.run();
         TestOperation.run();
+        TestVille.run();
 
     }
 }
