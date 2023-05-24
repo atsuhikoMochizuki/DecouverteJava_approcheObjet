@@ -11,13 +11,13 @@ public class TestPersonne {
         Personne acteur2 = new Personne("Bronchard", "Ismaël", adrActeur2);
 
         Utils.msgInfo("Modification d'un utilisateur:");
-        String strMsg = "Valeur actuelle : "+acteur1.toString();
+        String strMsg = "Valeur actuelle : "+ acteur1;
         Utils.msgInfo(strMsg);
 
         acteur1.setFirstName("Zidane");
         acteur1.setLastName("Zinedine");
         acteur1.setAdress(adrActeur1,2058,"chemin des Alouettes",32000, "Roncevaux");
-        strMsg = "Nouvelle valeur : "+acteur1.toString();
+        strMsg = "Nouvelle valeur : "+ acteur1;
         Utils.msgInfo(strMsg);
     }
 }

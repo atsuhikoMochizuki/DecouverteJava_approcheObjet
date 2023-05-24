@@ -7,7 +7,7 @@ public class TestMethodeStatic {
         String chaine = "12";
         int convertedString = Integer.parseInt(chaine);
         int a = 25, b = 426;
-        chaine = "Le nombre le plus grand entre " + a + " et " + b + " est : " + Integer.max(a, b);
+        chaine = "Le nombre le plus grand entre " + a + " et " + b + " est : " + b;
         Utils.msgResult(chaine);
     }
 }

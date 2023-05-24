@@ -2,7 +2,6 @@ package fr.diginamic.listes.tri;
 
 import fr.diginamic.listes.ComparatorHabitants;
 import fr.diginamic.listes.ComparatorNom;
-import fr.diginamic.listes.TestVille;
 import fr.diginamic.listes.Ville;
 import mochizukiTools.Utils;
 
@@ -25,24 +24,24 @@ public class TriDeVille {
         Utils.msgTitle("Tri des villes par nbre d'habitants");
         Utils.msgInfo("Liste actuelle : ");
         for (Ville ville : villes)
-            System.out.printf("%d ",ville.toString());
+            System.out.printf("%s ",ville.toString());
         ComparatorHabitants cmp_hab = new ComparatorHabitants();
         Collections.sort(villes,cmp_hab);
         Utils.msgInfo("Nouvelle liste : ");
         for (Ville ville : villes)
-            System.out.printf("%d ",ville.toString());
+            System.out.printf("%s ",ville.toString());
 
         Utils.msgTitle("Tri des villes par ordre alphabétique");
         Utils.msgInfo("Liste actuelle : ");
         for (Ville ville : villes)
-            System.out.printf("%d ",ville.toString());
+            System.out.printf("%s ",ville.toString());
         ComparatorNom cmp_nom = new ComparatorNom();
         Collections.sort(villes, cmp_nom);
         for (Ville ville : villes)
             System.out.println(ville.toString());
         Utils.msgInfo("Nouvelle liste : ");
         for (Ville ville : villes)
-            System.out.printf("%d ",ville.toString());
+            System.out.printf("%s ",ville.toString());
     }
 }
 

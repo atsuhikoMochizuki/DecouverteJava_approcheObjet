@@ -58,7 +58,7 @@ public class TestListeInt {
         iterator1 = list4.iterator();
         while (iterator1.hasNext()) {
             Integer number = iterator1.next();
-            System.out.println("" + number);
+            System.out.println(String.valueOf(number));
         }
 
         Utils.msgInfo("Transformation des éléments négatifs en éléments positifs:");

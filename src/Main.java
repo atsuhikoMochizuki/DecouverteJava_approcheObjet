@@ -4,11 +4,11 @@ import fr.diginamic.entites.TestPersonne;
 
 import fr.diginamic.fichier.CreerFichier;
 import fr.diginamic.fichier.LectureFichier;
+import fr.diginamic.fichier.LectureFichierAvecInstanciation;
 import fr.diginamic.listes.TestVille;
-import fr.diginamic.listes.TestVille.*;
 import fr.diginamic.utils.TestMethodeStatic;
 import mochizukiTools.Params;
-import fr.diginamic.fichier.LectureFichier.*;
+
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -22,5 +22,6 @@ public class Main {
         TestVille.run();
         LectureFichier.run();
         CreerFichier.run();
+        LectureFichierAvecInstanciation.run();
     }
 }

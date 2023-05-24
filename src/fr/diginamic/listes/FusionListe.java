@@ -1,12 +1,11 @@
 package fr.diginamic.listes;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class FusionListe {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         List<String> liste1 = new ArrayList<String>();
         liste1.add("Rouge");
         liste1.add("Vert");

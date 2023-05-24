@@ -15,7 +15,7 @@ public class Utils {
     }
 
 
-    public final static void clearConsole() {
+    public static void clearConsole() {
         try {
             final String os = System.getProperty("os.name");
 

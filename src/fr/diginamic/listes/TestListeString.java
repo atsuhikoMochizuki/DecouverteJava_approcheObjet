@@ -3,14 +3,14 @@ package fr.diginamic.listes;
 import mochizukiTools.Utils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.ListIterator;
 
 public class TestListeString {
     public static void main(String[] args) {
         ArrayList<String> listeVilles = new ArrayList<>();
         String[] villes = {"Nice", "Carcassonne", "Narbonne", "Lyon", "Foix", "Pau", "Marseille", "Tarbes"};
-        for(int i =0; i< villes.length;i++)
-            listeVilles.add(villes[i]);
+        Collections.addAll(listeVilles, villes);
 
         String villeTest = "";
         ListIterator<String> it = listeVilles.listIterator();
@@ -45,7 +45,7 @@ public class TestListeString {
         while(it.hasNext())
         {
             String str = it.next();
-            if(str.substring(0,1).equals("N"))
+            if(str.charAt(0) == 'N')
                 it.remove();
         }
         Utils.msgInfo("Rafraichissement de la liste...");

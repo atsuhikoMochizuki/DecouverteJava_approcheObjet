@@ -27,7 +27,7 @@ public class TestOperation {
             else
                 montantGlobal -=op.getMontant();
         }
-        String str2 = ""+montantGlobal+" Euros";
+        String str2 = montantGlobal+" Euros";
         Utils.msgResult(str2);
 
     }

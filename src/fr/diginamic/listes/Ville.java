@@ -11,8 +11,9 @@ public class Ville{
 
     public Ville(String nom) {
         this.nom = nom;
-        this.pop = pop;
     }
+
+
 
     @Override
     public String toString() {
@@ -34,7 +35,4 @@ public class Ville{
         return pop;
     }
 
-    public void setPop(int pop) {
-        this.pop = pop;
-    }
 }
