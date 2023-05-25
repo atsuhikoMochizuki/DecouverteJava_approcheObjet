@@ -6,6 +6,9 @@ import fr.diginamic.fichier.CreerFichier;
 import fr.diginamic.fichier.LectureFichier;
 import fr.diginamic.fichier.LectureFichierAvecInstanciation;
 import fr.diginamic.listes.TestVille;
+import fr.diginamic.maps.CreationEtManipulationMap;
+import fr.diginamic.maps.CreationMap;
+import fr.diginamic.maps.MapVilles;
 import fr.diginamic.utils.TestMethodeStatic;
 import mochizukiTools.Params;
 
@@ -23,5 +26,8 @@ public class Main {
         LectureFichier.run();
         CreerFichier.run();
         LectureFichierAvecInstanciation.run();
+        CreationMap.run();
+        CreationEtManipulationMap.run();
+        MapVilles.run();
     }
 }
